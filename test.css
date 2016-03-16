@@ -1,0 +1,78 @@
+ p {
+ 	font-family: ARIAL; 
+ 	font-size: 10px;
+    color: #555555;
+    text-align: center;
+ } 
+ p.pride {
+ 	font-family: simsun;
+ 	font-size: 20px;
+ 	border-left:20px;
+ }
+ h2.one{
+ 	font-family: serif;
+ 	font-size: 1tpx;
+ 	font-weight: bold;
+ 	color: #888888;
+ 	text-align: center;
+ }
+ div#dtwo {
+ 	font-size:10pt;
+ 	font-family: "宋体";
+ 	border-style:none;
+ 	color: #338888;
+ 	text-align: center;
+ }
+ div#left {
+ 	width: 19%;
+ 	text-align: left;
+ 	float: left;
+ }
+ div#right {
+ 	margin-left: 20%;
+ }
+ div.pride {
+ 	clear: both;
+ }
+ div.media {
+ 	clear: both;
+ }
+ 	
+ a {
+ 	font-family: Verdana;
+ 	font-weight: bold;
+ }
+ a:link {
+ 	color: blue;
+ }
+ a:visited {
+ 	color:#cccccc;
+ }
+ a:hover {
+ 	font-family: sans-serif;
+ 	color:red;
+ }
+ a:active {
+ 	color:gray;
+ }
+ /*body{
+ 	background-color: #662233;
+ 	} */
+ 	img{
+ 		width: 300px;
+ 		text-align: right;
+ 	}
+ 	div{
+ 		border:20px;
+ 	}
+ 	div.block {
+ 		position:absolute; 
+ 		width:300px; 
+ 		height:200px; 
+ 		background-color:black; 
+ 		color:red; 
+ 		margin:10px; 
+ 		float:left; 
+ 		top:1200px; 
+ 		left:100px;
+ 	}

@@ -1,0 +1,23 @@
+div {
+	font-family: Verdana;
+}
+div#nav {
+	width: 150px;
+	background-color: #D19275;
+	margin-top: 10px;
+	margin-right:15px;
+	float:left;
+}
+div#content {
+	width:550px;
+	float:left;
+}
+div#nav ul {
+	list-style: none;/*移除ul前面的标记*/
+	padding:0px;
+}
+div#nav li {
+	background-color: #F0E68C;
+	margin-top: 3px;
+	border-bottom:1px solid #ffffff;
+}

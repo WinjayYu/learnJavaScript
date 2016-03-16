@@ -1,0 +1,60 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>css创建工具提示</title>
+	<style type="text/css">
+		p {
+			display: block;
+			margin-left: 100px;
+			margin-right: 100px;
+		}
+		a {
+			text-decoration: none;
+			font-weight: bold;
+		}
+		a.tip {
+			position: relative;
+			z-index:25;
+		}
+		a.tip span {
+			display: none;
+		}
+		a.tip:hover span {
+			font-weight:normal;
+			display: block;
+			position: absolute;
+			top: 20px;
+			left: 25px;
+			width: 150px;
+			padding: 3px;
+			border: 1px solid #000;
+			background-color: #ddd;
+			color: #000;
+		}
+		show_e {
+			display: none;
+		}
+	    hide_e {
+	    	display: none;
+	    }
+		.fakelink {
+			cursor: pointer;
+			text-decoration: none;
+			font-weight: bold;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<p>
+　　在这样<a class="tip" href="http://www.wikipedia.org">雨雪<span>维基一下：风雨</span></a>交加的日子里，如果没有什么紧要事，人们宁愿一整天足不出户。因此，县城的大街小巷倒也比平时少了许多嘈杂。街巷背阴的地方。冬天残留的积雪和冰溜子正在雨点的敲击下蚀化，石板街上到处都漫流着肮脏的污水。风依然是寒冷的。空荡荡的街道上，有时会偶尔走过来一个乡下人，破毡帽护着脑门，胳膊上挽一筐子土豆或萝卜，有气无力地呼唤着买主。唉，城市在这样的日子里完全丧失了生气，变得没有一点可爱之处了。</p>
+<div class="fakelink"
+	 id='show_e'
+	 onclick="this.style.display='none';
+	 document.getElementById('hide_e').style.display='inline';">&raquo; Show</div>
+<div class="fakelink"
+	 id='hide_e'
+	 onclick="this.style.display='none';
+	 document.getElementById('show_e').style.display='inline';">&raquo; Hide</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<meta charset=UTF-8>
+<style type="text/css">
+	body {
+		background-color:gray;
+		background-image:url(./switchImages/1.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		text-align:center;
+	}
+	#container {
+
+	}
+	#header {
+		text-align: center;
+		margin:18% auto;
+
+		background-color:rgba(0,0,0,0.3);/*参数a规定了透明度，从0.0到1.0*/
+		border-radius: 1.5em;
+		overflow: auto; 
+		max-height: 80%;
+		width: 40%;
+    }
+    #contents a{
+    	color:	#eee;
+    	/*text-decoration: none;*/
+    	font-family: :"Times New Roman",Georgia,Serif;
+    	font-size: 20px;
+    }
+    #contents a:hover {
+    	color:#778899;
+    }
+    #contents p:hover {
+    	background-color: #2F4F4F;
+    }
+    #contents p {
+    	background-color: rgba(0,0,0,0.5);
+    	padding: 0.25rem;
+    	border-radius: 0.5em;//向div添加圆角边框
+    	text-shadow:0 1px 1px #333;
+    	max-width: 80%;
+    	margin: 3% 10%;
+    }
+    #blogTitle h2, p {
+    	color:#eee;
+    }
+    
+</style>
+
+<script type="text/javascript">
+function randomNumer() {
+	var count = 10;
+	var path = "http://ylili.cn/switchImages/";
+	var randomNum = Math.floor(Math.random()*count+1);
+	// var jpg = ".jpg";
+	var url = path + randomNum + ".jpg";
+	return url;
+}
+
+function backgroundImage() {
+	var bodyStyle = document.body.style; 
+	// alert(bodyStyle);
+	bodyStyle.backgroundImage = " url(" + randomNumer() + ")";
+}
+
+window.onload = backgroundImage;
+</script>
+<head>
+	<title>博客</title>
+</head>
+<body >
+	<div id="container">
+		<div id="header">
+			<div id="blogTitle">
+				<h2>余文杰的个人博客</h2>
+				<p>YuWenjie's Personel Website</p>
+			</div>
+			<div id="contents">
+				<p>
+					<a href="#">Blog</a>
+					<a href="#">About</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

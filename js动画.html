@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>js动画效果</title>
+	<style type="text/css">
+		img {
+			width:600px;
+		}
+		li {
+			list-style: none;/*去掉序号*/
+			font-size: 30px;
+			margin-top: 6px;
+			display: inline;/*使清单横着排列*/
+		}
+		ol {
+			margin-top: 50px;
+		}
+		a {
+			text-decoration: none;
+		}
+		div#slideshow {
+			margin-top: 100px;
+			margin-left:200px;
+			width:200px;
+			height:300px;
+			position:relative;
+			overflow: hidden;/*溢出的设置为隐藏
+		}*/
+		#preview {
+			position:absolute;
+		}
+	</style>
+</head>
+<body>
+	<!-- <p id="mess">this is a paragraph</p> -->
+	<ol id="linklist">
+		<li>
+			<a href="#1">pic1</a>
+		</li>
+		<li>
+			<a href="#2">pic2</a>
+		</li>
+		<li>
+			<a href="#3">pic3</a>
+		</li>
+	</ol>
+	<!--<div id="slideshow">
+		<img src="img/book.jpg" id="preview" />
+	</div>-->
+	<input type="text" placeholder="your name" />
+	<script type="text/javascript" src="js动画1.js"></script>
+</body>
+</html>
